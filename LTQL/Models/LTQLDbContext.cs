@@ -15,7 +15,11 @@ namespace LTQL.Models
 
         public virtual DbSet<NhaCC> NhaCCs { get; set; }
 
+        public virtual DbSet<HoaDon> HoaDons { get; set; }
 
+        public virtual DbSet<HangHoa> HangHoas { get; set; }
+
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<KhachHang>()
